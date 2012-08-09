@@ -6,8 +6,8 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\RadioType;
 use Symfony\Component\Form\FormBuilder;
 
-use Isics\ToolsBundle\Form\Type\BatchActionType;
-use Isics\ToolsBundle\Model\BatchCollection;
+use Isics\BatchActionsBundle\Form\Type\BatchActionsType;
+use Isics\BatchActionsBundle\Model\BatchCollection;
 
 /**
 * Form type for batch actions form
@@ -72,7 +72,7 @@ class BatchType extends AbstractType
             'multiple'      => true
         ));
         
-        $builder->add('action', new BatchActionType($this->actions, array(
+        $builder->add('action', new BatchActionsType($this->actions, array(
             'label'         => 'Action',
             'expanded'      => false,
             'multiple'      => false
