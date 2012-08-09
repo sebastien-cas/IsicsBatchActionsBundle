@@ -85,7 +85,7 @@ class BatchType extends AbstractType
     public function getDefaultOptions(array $options)
     {
         return array(
-            'data_class' => 'Isics\ToolsBundle\Model\BatchCollection'
+            'data_class' => 'Isics\BatchActionsBundle\Model\BatchCollection'
         );
     }
     
