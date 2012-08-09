@@ -69,7 +69,8 @@ class BatchType extends AbstractType
             'label'         => 'Elements',
             'choices'       => $this->elements,
             'expanded'      => true,
-            'multiple'      => true
+            'multiple'      => true,
+            'required'      => true
         ));
         
         $builder->add('action', new BatchActionsType($this->actions, array(
