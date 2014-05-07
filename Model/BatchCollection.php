@@ -52,6 +52,17 @@ class BatchCollection
     {
         return $this->availableActions;
     }
+
+    /**
+     * Add available action
+     *
+     * @param string $action
+     * @param string $label
+     */
+    public function addAvailableAction($action, $label)
+    {
+        $this->availableActions[$action] = $label;
+    }
     
     /**
      * Set checked elements (called by type when binding request parameters)
